@@ -1,0 +1,32 @@
+ <section class="scrollable-section">
+            <div class="scroll-container">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </section>
+
+
+
+.scrollable-section {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    width: 1400px;
+}
+
+.scroll-container {
+    display: flex;
+    position: absolute;
+    overflow:auto;
+    scroll-behavior: smooth;
+}
+
+.box {
+    width: 445px;
+    height: 249.836px;
+    background-color: rgba(3, 51, 78, 0.9);
+    margin-right: 20px;
+}
