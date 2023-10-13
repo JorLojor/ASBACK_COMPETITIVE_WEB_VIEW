@@ -1,9 +1,8 @@
-body {
+*{
     margin: 0;
     padding: 0;
-    
+    font-family: 'outfit';
 }
-
 
 section {
     width: 100%;
@@ -116,4 +115,239 @@ section {
     height: 249.836px;
     background-color: rgba(3, 51, 78, 0.9);
     margin-right: 20px;
+}
+
+
+/* Navigation Bar */
+
+.nav-bar {
+    width: 100%;
+    padding: 10px 0 2vw 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #114871;
+    font-size: 25px;
+    font-weight: medium;
+}
+
+.nav-bar img {
+    position: relative;
+    left: 3%;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.nav-bar nav {
+    background-color: #333;
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-right: 0.35vw;
+}
+
+.nav-bar li {
+    margin: 0;
+    padding: 0;
+    font-family: 'outfit';
+}
+
+/* Add this CSS code to create a "border-bottom" hover effect on navigation links */
+
+.nav-bar li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 2vw 2vw 0 2vw ;
+    position: relative; 
+}
+
+.nav-bar li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #007bff; 
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; 
+}
+
+.nav-bar li a:hover::before {
+    width: 100%; 
+}
+
+
+
+/* Data Section */
+
+.data-section {
+    width: 100%;
+    height: max-content;
+}
+
+.data-section h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: #404040;
+    padding: 90px 0 20px 0;
+}
+
+.data-section .content{
+    display: flex;
+    justify-content: center;
+    background-color: #A0A0A0;
+    width: max-content;
+    margin: 1vw auto 0 auto;
+    text-align: center;
+    padding: 1.7vw 2vw 4.65vw;
+    border-radius: 10px;
+}
+
+.data-section .content .weight, .data-section .content .price,.data-section .content .market{
+    margin: 0 5vw;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.data-section .content .weight h4, .data-section .content .price h4,.data-section .content .market h4{
+    padding: 3.5vw 0 0 0;
+}
+
+
+/* Pelabuhan section */
+
+.pelabuhan-section {
+    width: 100%;
+}
+
+.pelabuhan-section h1{
+    text-align: center;
+    padding: 90px 0;
+    font-weight: bold;
+    font-size: 40px;
+    color: #404040;
+}
+
+.pelabuhan-section .first-pelabuhan, .pelabuhan-section .third-pelabuhan{
+    display: flex;
+    padding: 0 0 3.5vw 0;
+    position: relative;
+    left: 3.8vw;
+    width: max-content;
+}
+
+.pelabuhan-section .first-pelabuhan .content, .pelabuhan-section .third-pelabuhan .content{
+    position: relative;
+    left: 2vw;
+    transform: translate(0,38%);
+}
+
+.pelabuhan-section .second-pelabuhan{
+    display: flex;
+    padding: 3.5vw 0 3.5vw 0;
+    justify-content: right;
+}
+
+.pelabuhan-section .second-pelabuhan img{
+    position: relative;
+    right: 3.8vw;
+    border-top: 2px solid black;
+}
+
+.pelabuhan-section .second-pelabuhan .content{
+    position: relative;
+    right: 5.9vw;
+    transform: translate(0,35%);
+}
+
+.pelabuhan-section .first-pelabuhan .content h2, .pelabuhan-section .second-pelabuhan .content h2,.pelabuhan-section .third-pelabuhan .content h2{
+    font-weight: bold;
+    font-size: 2vw;
+    color: #404040;
+}
+
+.pelabuhan-section .first-pelabuhan .content p,.pelabuhan-section .second-pelabuhan .content p,.pelabuhan-section .third-pelabuhan .content p{
+    font-size: 1.4vw;
+    padding: 5px 0;
+}
+
+.pelabuhan-section .first-pelabuhan .content button,.pelabuhan-section .second-pelabuhan .content button,.pelabuhan-section .third-pelabuhan .content button{
+    width: max-content;
+    padding: 0.7vw;
+    background-color: rgba(31, 33, 29, 0.3);
+    border-radius: 5px;
+    border-style: none !important;
+    color: white;
+}
+
+.pelabuhan-section .second-pelabuhan .content button{
+    position: relative;
+    left: 100%;
+    transform: translate(-7.5vw);
+}
+
+.pelabuhan-section .content{
+    width: 41vw;
+}
+
+.pelabuhan-section img{
+    width: 41.7vw;
+    height: 27.8vw;
+}
+
+.pelabuhan-section .maps {
+    padding: 100px 0 60vw 0;
+}
+
+.pelabuhan-section .maps img{
+    width: 83.3vw;
+    height: 48.6vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 20px solid #D9D9D9;
+}
+
+.pelabuhan-section .maps .marker-1,.pelabuhan-section .maps .marker-2,.pelabuhan-section .maps .marker-3  {
+    width: auto;
+    height: auto;
+    z-index: 10;
+    border: none;
+}
+
+.pelabuhan-section .maps .marker-1{
+    left: 20vw;
+    margin-top: 11vw;
+}
+
+.pelabuhan-section .maps .marker-2 {
+    left: 63.5vw;
+    margin-top: 16.7vw;
+}
+
+.pelabuhan-section .maps .marker-3 {
+    left: 66vw;
+    margin-top: 23vw;
+}
+
+
+@media screen and (max-width: 900px) {
+    .nav-bar {
+        font-size: 20px;
+    }
+
+    .pelabuhan-section .content button{
+        font-size: 10px !important;
+    }
+
+    .pelabuhan-section .second-pelabuhan .content button{
+        position: relative;
+        left: 100%;
+        transform: translate(-9vw);
+    }
 }
