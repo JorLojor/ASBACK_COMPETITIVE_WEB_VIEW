@@ -429,6 +429,21 @@ section {
     width: 200px;
     height: 100px;
 }
+.button-core-box-content{
+    width: 80px;
+    height: 32px;
+    border-radius: 5px;
+    border-style: none !important;
+    background-color: rgba(31, 33, 29, 0.30);
+    color: #FFF;
+    padding: 8px;
+    font-family: Outfit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 30%;
+}
 .core-box-content-title{
     color: #E8E8E8;
     font-family: Outfit;
