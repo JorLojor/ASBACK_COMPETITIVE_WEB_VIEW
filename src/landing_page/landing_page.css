@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'outfit';
     list-style: none;
 }
 
@@ -9,6 +8,8 @@ section {
     width: 100%;
     height: 100vh;
 }
+
+/* header */
 
 .set-jumbotron {
     max-width: 98vw;
@@ -32,13 +33,11 @@ section {
     height: 418px;
     flex-shrink: 0;
     color: #FFF;
-    font-family: Outfit;
     font-size: 40px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
     padding-top: 181px;
-    /* padding-left: 70px; */
 }
 
 .slide:first-child{
@@ -62,7 +61,6 @@ section {
     border-radius: 10px;
     background: rgba(31, 33, 29, 0.60);
     color: #FFF;
-    font-family: Outfit;
     font-size: 25px;
     font-style: normal;
     font-weight: 500;
@@ -120,42 +118,39 @@ section {
 .box-card-content{
     width: 304px;
     height: 241px;
-    /* background-color: rgb(255, 255, 255); */
     margin-left: 35px;
     margin-right: 35px;
     display: block;
     margin-bottom: 30px;
 }
+
 .box-card-content img{
     width: 304.4px;
     height: 150px;
 }
+
 .text-content-card{
     margin: 10px;
     padding-bottom: 10px;
     color: #000;
-    font-family: Outfit;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
+
 .text-content-card button{
     width: 73px;
     height: 24px;
     border-radius: 10px;
     background: rgba(31, 33, 29, 0.60);
     color: #FFF;
-    /*  */
-    font-family: Outfit;
     font-size: 10px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    /*  */
     border: none;
 }
-
 
 /* Navigation Bar */
 
@@ -216,8 +211,6 @@ section {
     width: 100%; 
 }
 
-
-
 /* Data Section */
 
 .data-section {
@@ -256,7 +249,6 @@ section {
 .data-section .content .weight h4, .data-section .content .price h4,.data-section .content .market h4{
     padding: 3.5vw 0 0 0;
 }
-
 
 /* Pelabuhan section */
 
@@ -376,7 +368,8 @@ section {
 }
 
 
-/*  */
+/*desc-section*/
+
 .desc-page {
     overflow: hidden;
 }
@@ -408,24 +401,27 @@ section {
     left: 50%;
     transform: translate(-50%);
 }
+
 .box-core-content{
     height: 100%;
     padding-top: 24px;
     width: 216px;
     margin: auto;
 }
+
 .core-box-content-title .title-core-contetn{
     color: #E8E8E8;
-    font-family: Outfit;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
+
 .core-box-content-title img{
     width: 200px;
     height: 100px;
 }
+
 .button-core-box-content{
     width: 80px;
     height: 32px;
@@ -434,16 +430,16 @@ section {
     background-color: rgba(31, 33, 29, 0.30);
     color: #FFF;
     padding: 8px;
-    font-family: Outfit;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     margin-left: 30%;
 }
+
 .core-box-content-title{
     color: #E8E8E8;
-    font-family: Outfit;
+    
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -454,20 +450,24 @@ section {
 .desc-page{
     height: fit-content;
 }
+
 .set-footer{
     background-color: #114871;
 }
+
 .box-footer{
     width: 100%;
     height: 421px;
     padding-top: 41px;
     border-right: 1.5px solid black;
 }
+
 .box-footer img{
     position: relative;
     left: 50%;
     transform: translate(-50%);
 }
+
 .box-footer-last{
     width: 100%;
     height: 421px;
@@ -477,27 +477,32 @@ section {
 .set-list-footer li{
     margin-bottom: 3px;
 }
+
 footer{
     margin-top: 200px;
 }
+
 .set-row-footer-title{
     color: #FFF;
     text-align: center;
-    font-family: Outfit;
+    
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;    
     padding-top: 40px;        
 }
+
 .logo-footer{
     margin-top: 139px;
 }
+
 .small-box-right {
     position: relative;
     right: 0;
 }
 
+/* responsiveness */
 
 @media screen and (max-width: 991px) {
     .overview {
@@ -523,10 +528,6 @@ footer{
     .small-box-left,.small-box-right {
         display: none;
     }
-    /* .box-content-fish{
-        padding: 0 !important;
-        margin: 0 !important;
-    } */
 }
 
 @media screen and (max-width: 900px) {
@@ -554,6 +555,7 @@ footer{
         font-size: 20px;
         display: block;
     }
+
     .nav-bar ul {
         background-color: rgb(45, 145, 220);
         display: block;
@@ -581,7 +583,6 @@ footer{
 
     .pelabuhan-section .first-pelabuhan, .pelabuhan-section .second-pelabuhan,.pelabuhan-section .third-pelabuhan{
         display: block;
-        /* background-color: red; */
     }
 
     .pelabuhan-section .third-pelabuhan{
