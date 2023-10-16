@@ -368,27 +368,10 @@ section {
 }
 
 
-@media screen and (max-width: 900px) {
-    .nav-bar {
-        font-size: 20px;
-    }
-
-    .pelabuhan-section .content button{
-        font-size: 10px !important;
-    }
-
-    .pelabuhan-section .second-pelabuhan .content button{
-        position: relative;
-        left: 100%;
-        transform: translate(-9vw);
-    }
-}
-
-
 /*  */
 
 .small-box-left{
-    width: 258px;
+    max-width: 17.9vw ;
     height: 300px;
     background-color: #3B6B90;
     border-top-right-radius: 15px;
@@ -396,7 +379,7 @@ section {
 }
 
 .small-box-right{
-    width: 258px;
+    max-width: 17.9vw;
     height: 300px;
     background-color: #3B6B90;
     border-top-left-radius: 15px;
@@ -410,6 +393,9 @@ section {
     background-color: #114871;
     border-radius: 15px;
     margin-bottom: 24px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
 .box-core-content{
     height: 100%;
@@ -466,6 +452,11 @@ section {
     padding-top: 41px;
     border-right: 1.5px solid black;
 }
+.box-footer img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
 .box-footer-last{
     width: 100%;
     height: 421px;
@@ -491,6 +482,58 @@ footer{
 .logo-footer{
     margin-top: 139px;
 }
+.small-box-right {
+    position: relative;
+    right: 0;
+}
+
+
+@media screen and (max-width: 991px) {
+    .overview {
+        position: absolute;
+        margin-top: 450px !important;
+    }
+
+    .follow {
+        position: absolute;
+        margin-top: 700px !important;
+    }
+
+    .box-footer{
+        border-right: none;
+    }
+
+    .box-footer-last{
+        width: 100%;
+        margin-top: -100px !important;
+        padding-top: 0 ;
+        height: max-content;
+    }
+    .small-box-left,.small-box-right {
+        display: none;
+    }
+    /* .box-content-fish{
+        padding: 0 !important;
+        margin: 0 !important;
+    } */
+}
+
+@media screen and (max-width: 900px) {
+    .nav-bar {
+        font-size: 20px;
+    }
+
+    .pelabuhan-section .content button{
+        font-size: 10px !important;
+    }
+    
+    .pelabuhan-section .second-pelabuhan .content button{
+        position: relative;
+        left: 100%;
+        transform: translate(-9vw);
+    }
+}
+
 
 
 @media screen and (max-width: 600px) {
@@ -524,42 +567,53 @@ footer{
         font-size: 30px;
         padding: 50px 0;
     }
+
     .pelabuhan-section .first-pelabuhan, .pelabuhan-section .second-pelabuhan,.pelabuhan-section .third-pelabuhan{
         display: block;
         /* background-color: red; */
     }
+
     .pelabuhan-section .third-pelabuhan{
         padding : 200px 0 0 0;
     }
+
     .pelabuhan-section .second-pelabuhan {
         width: max-content;
         position: relative;
         left: 3.8vw ;
         padding: 50px 0 0 0;
     }
+
     .pelabuhan-section .first-pelabuhan img, .pelabuhan-section .second-pelabuhan img,.pelabuhan-section .third-pelabuhan img{
         width: 90vw;
         height: 90vw;
     }
+
     .pelabuhan-section .second-pelabuhan img{
         right: 0;
     }
+
     .pelabuhan-section .first-pelabuhan .content, .pelabuhan-section .second-pelabuhan .content,.pelabuhan-section .third-pelabuhan .content{
         width: 90vw;
     }
+
     .pelabuhan-section .first-pelabuhan .content p, .pelabuhan-section .second-pelabuhan .content p,.pelabuhan-section .third-pelabuhan .content p{
         font-size: 12px;
     }
+
     .pelabuhan-section .first-pelabuhan .content h2, .pelabuhan-section .second-pelabuhan .content h2,.pelabuhan-section .third-pelabuhan .content h2{
         font-size: 18px;
     }
+
     .pelabuhan-section .second-pelabuhan .content{
         position: absolute;
         left: 3.8vw;
         margin: 85vw 0 0 0;
     }
+
     .pelabuhan-section .second-pelabuhan button {
         left: 9vw !important;
         transform: translate(0%,0%);
     }
+
 }
