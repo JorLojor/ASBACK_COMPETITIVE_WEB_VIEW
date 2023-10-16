@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'outfit';
+    list-style: none;
 }
 
 section {
@@ -253,6 +254,7 @@ section {
 
 .pelabuhan-section {
     width: 100%;
+    height: fit-content;
 }
 
 .pelabuhan-section h1{
@@ -381,6 +383,115 @@ section {
         transform: translate(-9vw);
     }
 }
+
+
+/*  */
+
+.small-box-left{
+    width: 258px;
+    height: 300px;
+    background-color: #3B6B90;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.small-box-right{
+    width: 258px;
+    height: 300px;
+    background-color: #3B6B90;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.box-content-fish{
+    width: 350px;
+    height: 300px;
+    display: block;
+    background-color: #114871;
+    border-radius: 15px;
+    margin-bottom: 24px;
+}
+.box-core-content{
+    height: 100%;
+    padding-top: 24px;
+    width: 216px;
+    margin: auto;
+}
+.core-box-content-title .title-core-contetn{
+    color: #E8E8E8;
+    font-family: Outfit;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.core-box-content-title img{
+    width: 200px;
+    height: 100px;
+}
+.button-core-box-content{
+    width: 80px;
+    height: 32px;
+    border-radius: 5px;
+    border-style: none !important;
+    background-color: rgba(31, 33, 29, 0.30);
+    color: #FFF;
+    padding: 8px;
+    font-family: Outfit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 30%;
+}
+.core-box-content-title{
+    color: #E8E8E8;
+    font-family: Outfit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.desc-page{
+    height: fit-content;
+}
+.set-footer{
+    background-color: #114871;
+}
+.box-footer{
+    width: 100%;
+    height: 421px;
+    padding-top: 41px;
+    border-right: 1.5px solid black;
+}
+.box-footer-last{
+    width: 100%;
+    height: 421px;
+    padding-top: 41px;
+}
+
+.set-list-footer li{
+    margin-bottom: 3px;
+}
+footer{
+    margin-top: 200px;
+}
+.set-row-footer-title{
+    color: #FFF;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    padding-top: 40px;        
+}
+.logo-footer{
+    margin-top: 139px;
+}
+
 
 @media screen and (max-width: 600px) {
     /* nav-bar */
