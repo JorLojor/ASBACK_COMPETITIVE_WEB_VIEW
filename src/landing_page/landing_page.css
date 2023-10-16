@@ -155,9 +155,9 @@ section {
     padding: 10px 0 2vw 0;
     display: flex;
     justify-content: space-between;
-    background-color: #114871;
     font-size: 25px;
     font-weight: medium;
+    background-image: url('../../assets/bg-nav.png');
 }
 
 .nav-bar img {
@@ -182,10 +182,7 @@ section {
 .nav-bar li {
     margin: 0;
     padding: 0;
-    font-family: 'outfit';
 }
-
-/* Add this CSS code to create a "border-bottom" hover effect on navigation links */
 
 .nav-bar li a {
     display: block;
@@ -238,10 +235,13 @@ section {
     border-radius: 10px;
 }
 
+.data-section .content h3, .data-section .content h4{
+    font-weight: bolder;
+    font-size: 2vw;
+}
+
 .data-section .content .weight, .data-section .content .price,.data-section .content .market{
     margin: 0 5vw;
-    font-weight: bold;
-    font-size: 2vw;
 }
 
 .data-section .content .weight h4, .data-section .content .price h4,.data-section .content .market h4{
@@ -344,8 +344,8 @@ section {
 }
 
 .pelabuhan-section .maps .marker-1,.pelabuhan-section .maps .marker-2,.pelabuhan-section .maps .marker-3  {
-    width: auto;
-    height: auto;
+    width: 5vw;
+    height: 5vw;
     z-index: 10;
     border: none;
 }
@@ -379,5 +379,76 @@ section {
         position: relative;
         left: 100%;
         transform: translate(-9vw);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* nav-bar */
+    .nav-bar {
+        background-color: rgb(45, 145, 220);
+        font-size: 20px;
+        display: block;
+    }
+    .nav-bar ul {
+        background-color: rgb(45, 145, 220);
+        display: block;
+    }
+
+    .nav-bar ul li  a {
+        width: fit-content;
+        margin: auto;
+    }
+
+    /* data-section */
+    .data-section h1{
+        font-size: 30px;
+    }
+
+    .data-section .content h3, .data-section .content h4{
+        font-size: 3vw;
+    }
+
+    /* pelabuhan-section */
+    .pelabuhan-section h1 {
+        font-size: 30px;
+        padding: 50px 0;
+    }
+    .pelabuhan-section .first-pelabuhan, .pelabuhan-section .second-pelabuhan,.pelabuhan-section .third-pelabuhan{
+        display: block;
+        /* background-color: red; */
+    }
+    .pelabuhan-section .third-pelabuhan{
+        padding : 200px 0 0 0;
+    }
+    .pelabuhan-section .second-pelabuhan {
+        width: max-content;
+        position: relative;
+        left: 3.8vw ;
+        padding: 50px 0 0 0;
+    }
+    .pelabuhan-section .first-pelabuhan img, .pelabuhan-section .second-pelabuhan img,.pelabuhan-section .third-pelabuhan img{
+        width: 90vw;
+        height: 90vw;
+    }
+    .pelabuhan-section .second-pelabuhan img{
+        right: 0;
+    }
+    .pelabuhan-section .first-pelabuhan .content, .pelabuhan-section .second-pelabuhan .content,.pelabuhan-section .third-pelabuhan .content{
+        width: 90vw;
+    }
+    .pelabuhan-section .first-pelabuhan .content p, .pelabuhan-section .second-pelabuhan .content p,.pelabuhan-section .third-pelabuhan .content p{
+        font-size: 12px;
+    }
+    .pelabuhan-section .first-pelabuhan .content h2, .pelabuhan-section .second-pelabuhan .content h2,.pelabuhan-section .third-pelabuhan .content h2{
+        font-size: 18px;
+    }
+    .pelabuhan-section .second-pelabuhan .content{
+        position: absolute;
+        left: 3.8vw;
+        margin: 85vw 0 0 0;
+    }
+    .pelabuhan-section .second-pelabuhan button {
+        left: 9vw !important;
+        transform: translate(0%,0%);
     }
 }
