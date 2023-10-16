@@ -1,23 +1,22 @@
-const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');
-const dotsContainer = document.querySelector('.slider-dots');
-let currentIndex = 0;
+const sliderDots = document.querySelector('.slider-dots');
 
-// Inisialisasi dots
-slides.forEach((slide, index) => {
-    const dot = document.createElement('div');
-    dot.classList.add('dot');
-    dot.addEventListener('click', () => {
-        goToSlide(index);
+let currentSlide = 0;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        if (i === index) {
+            slide.style.display = 'block';
+        } else {
+            slide.style.display = 'none';
+        }
     });
-    dotsContainer.appendChild(dot);
-});
+}
 
-// Fungsi untuk memperbarui tampilan dot yang aktif
 function updateDots() {
-    const dots = dotsContainer.querySelectorAll('.dot');
-    dots.forEach((dot, index) => {
-        if (index === currentIndex) {
+    const dots = Array.from(sliderDots.children);
+    dots.forEach((dot, i) => {
+        if (i === currentSlide) {
             dot.classList.add('active-dot');
         } else {
             dot.classList.remove('active-dot');
@@ -25,38 +24,26 @@ function updateDots() {
     });
 }
 
-// Fungsi untuk pergi ke slide tertentu
-function goToSlide(index) {
-    currentIndex = index;
-    const offset = -index * 100;
-    slider.style.transform = `translateX(${offset}%)`;
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
     updateDots();
 }
 
-// Fungsi untuk menggeser ke slide berikutnya
-function nextSlide() {
-    if (currentIndex < slides.length - 1) {
-        currentIndex++;
-        goToSlide(currentIndex);
-    }
-}
-
-// Fungsi untuk menggeser ke slide sebelumnya
-function prevSlide() {
-    if (currentIndex > 0) {
-        currentIndex--;
-        goToSlide(currentIndex);
-    }
-}
-
-// Mulai dengan slide pertama
-goToSlide(currentIndex);
-
-// Aktifkan tombol geser
-document.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowLeft') {
-        prevSlide();
-    } else if (event.key === 'ArrowRight') {
-        nextSlide();
-    }
+// Create dots for each slide
+slides.forEach((slide, i) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    dot.addEventListener('click', () => {
+        currentSlide = i;
+        showSlide(currentSlide);
+        updateDots();
+    });
+    sliderDots.appendChild(dot);
 });
+
+showSlide(currentSlide);
+updateDots();
+
+// Auto-advance the slider
+setInterval(nextSlide, 5000);
